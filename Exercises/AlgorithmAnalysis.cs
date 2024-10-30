@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Exercises
+﻿namespace Exercises
 {
-    public class AlgorithmAnalysis
+    public class TimeComplexity
     {
         public static int TimeComplexityOne()
         {
@@ -83,7 +81,7 @@ namespace Exercises
                  * Arithmetic Operations: Log N
                  */
                 int mid = (i + j) / 2;// assignment and declaration
-                if ( A[mid] == key)// comparison operations
+                if (A[mid] == key)// comparison operations
                 {
                     //Found the number
                     return 1;//return operation 1
@@ -99,19 +97,18 @@ namespace Exercises
             }
             //Did not find the number
             return 0;//return operation 1
-        /*
-         * Total: 6 + (logN + 1) + 4logN
-         * final: 7 + 5LogN
-         */
+            /*
+             * Total: 6 + (logN + 1) + 4logN
+             * final: 7 + 5LogN
+             */
         }
 
     }
-    class Program
+    public class OrderOfGrowth
     {
-        static void Main()
-        {
-            AlgorithmAnalysis.TimeComplexityOne();
-            Console.WriteLine("Main Function");
-        }
+        /*
+         * Classify algorithms on perfomance on how it grows
+         * growth as size of input grows
+         */
     }
 }
