@@ -66,6 +66,45 @@ namespace Exercises
             //Grand Total TC: 4 + N * M
             return total;
         }
+        public static int TimeComplexityThree(int[] A, int key)
+        {
+            //Binary search
+            //Data
+            int i = 0; //declaratio and assignment 1 + 1
+            int j = A.Length; // declaration and assignment 1 + 1
+
+            //Algorithm
+            while (i < j) //Logn + 1 because while loop will only iterate through half of the array and repeat this with the another half of the half until it finds the key
+            {
+                /*
+                 * Declaration: Log N
+                 * Assignments: Log N
+                 * Comparison Operators: Log N
+                 * Arithmetic Operations: Log N
+                 */
+                int mid = (i + j) / 2;// assignment and declaration
+                if ( A[mid] == key)// comparison operations
+                {
+                    //Found the number
+                    return 1;//return operation 1
+                }
+                else if (A[mid] > key)// comparison operations
+                {
+                    j = mid - 1;// assignment and declaration
+                }
+                else// comparison operations
+                {
+                    i = mid + 1;// assignment and declaration
+                }
+            }
+            //Did not find the number
+            return 0;//return operation 1
+        /*
+         * Total: 6 + (logN + 1) + 4logN
+         * final: 7 + 5LogN
+         */
+        }
+
     }
     class Program
     {
