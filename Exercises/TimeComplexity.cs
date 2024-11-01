@@ -104,11 +104,4 @@
         }
 
     }
-    public class OrderOfGrowth
-    {
-        /*
-         * Classify algorithms on perfomance on how it grows
-         * growth as size of input grows
-         */
-    }
 }
