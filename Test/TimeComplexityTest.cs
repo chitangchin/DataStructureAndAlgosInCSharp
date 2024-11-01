@@ -22,13 +22,4 @@ namespace Test
             Assert.That(TimeComplexity.TimeComplexityThree([1, 2, 3, 4, 5, 6, 7, 8, 100, 200], 100), Is.EqualTo(1));
         }
     }
-    [TestFixture]
-    public class OrderOfGrowthTests
-    {
-        [Test]
-        public void OrderOfGrowthOne()
-        {
-            Assert.Pass();
-        }
-    }
 }
